@@ -1,0 +1,41 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <!-- Transparent background (no rect) -->
+  <!-- Keycaps (SHOP) -->
+  <g id="keys" transform="translate(100,60)" fill="#FFFFFF" stroke="#e6eef6" stroke-width="6" >
+    <rect x="0"   y="0" width="220" height="220" rx="28" ry="28" />
+    <rect x="250" y="0" width="220" height="220" rx="28" ry="28" />
+    <rect x="500" y="0" width="220" height="220" rx="28" ry="28" />
+    <rect x="750" y="0" width="220" height="220" rx="28" ry="28" />
+  </g>
+
+  <!-- Letters inside keycaps: use navy for contrast on #003366 navbar -->
+  <g id="shop-letters" transform="translate(100,60)" fill="#003366" font-family="Montserrat, Arial, Helvetica, sans-serif" font-weight="700" text-anchor="middle">
+    <text x="110" y="140" font-size="120">S</text>
+    <text x="360" y="140" font-size="120">H</text>
+    <text x="610" y="140" font-size="120">O</text>
+    <text x="860" y="140" font-size="120">P</text>
+  </g>
+
+  <!-- ZUITT below in bold white -->
+  <g id="zuitt" transform="translate(100,320)">
+    <text x="600" y="270" fill="#FFFFFF" font-family="Bebas Neue, Bebas, Arial, Helvetica, sans-serif" font-weight="700" font-size="300" text-anchor="middle" letter-spacing="6">ZUITT</text>
+  </g>
+
+  <!-- Optional subtle inner shadow effect on keys -->
+  <defs>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feOffset dx="0" dy="8" result="offOut" />
+      <feGaussianBlur in="offOut" stdDeviation="10" result="blurOut" />
+      <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+    </filter>
+  </defs>
+  <g transform="translate(100,60)" filter="url(#softShadow)">
+    <!-- duplicate low-opacity rects to create subtle depth (kept minimal) -->
+    <rect x="0"   y="0" width="220" height="220" rx="28" ry="28" fill="#ffffff" opacity="0.12"/>
+    <rect x="250" y="0" width="220" height="220" rx="28" ry="28" fill="#ffffff" opacity="0.12"/>
+    <rect x="500" y="0" width="220" height="220" rx="28" ry="28" fill="#ffffff" opacity="0.12"/>
+    <rect x="750" y="0" width="220" height="220" rx="28" ry="28" fill="#ffffff" opacity="0.12"/>
+  </g>
+
+</svg>

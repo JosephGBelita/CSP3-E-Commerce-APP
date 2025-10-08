@@ -1,0 +1,75 @@
+<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Transparent Background -->
+  <rect width="500" height="200" fill="transparent"/>
+  
+  <!-- Logo Container -->
+  <g transform="translate(100, 55)">
+    
+    <!-- "Zuitt" in clean modern font -->
+    <text x="0" y="45" font-family="'Arial', 'Helvetica', sans-serif" font-size="42" font-weight="400" fill="#ffffff" letter-spacing="1">
+      Zuitt
+    </text>
+    
+    <!-- "PAD" - Gaming console elements, tight spacing -->
+    <g transform="translate(140, 0)">
+      
+      <!-- P - Controller with Analog Stick -->
+      <g id="letter-p">
+        <!-- Vertical stem -->
+        <rect x="0" y="5" width="16" height="95" rx="4" fill="#ffffff"/>
+        
+        <!-- Controller top bump -->
+        <circle cx="32" cy="25" r="20" fill="#ffffff"/>
+        <rect x="12" y="15" width="8" height="20" fill="#ffffff"/>
+        
+        <!-- Analog stick -->
+        <circle cx="32" cy="25" r="8" fill="#00CFFF"/>
+        <circle cx="32" cy="25" r="5" fill="#ffffff"/>
+      </g>
+      
+      <!-- A - Triangle Button (PlayStation style) -->
+      <g id="letter-a" transform="translate(60, 5)">
+        <!-- Left leg -->
+        <path d="M 8,75 L 24,5 L 32,5 L 16,75 Z" fill="#ffffff"/>
+        
+        <!-- Right leg -->
+        <path d="M 32,5 L 40,5 L 56,75 L 48,75 Z" fill="#ffffff"/>
+        
+        <!-- Crossbar -->
+        <rect x="20" y="48" width="24" height="10" fill="#ffffff"/>
+        
+        <!-- Triangle button on top -->
+        <polygon points="32,15 26,25 38,25" fill="#00CFFF"/>
+        <polygon points="32,18 28,24 36,24" fill="#ffffff"/>
+      </g>
+      
+      <!-- D - D-pad (Directional Pad) -->
+      <g id="letter-d" transform="translate(125, 5)">
+        <!-- Vertical stem -->
+        <rect x="36" y="0" width="16" height="75" rx="4" fill="#ffffff"/>
+        
+        <!-- Curved bump (controller body) -->
+        <path d="M 0,12 Q 0,5 8,5 L 36,5 L 36,70 L 8,70 Q 0,70 0,63 Z" fill="#ffffff"/>
+        
+        <!-- D-pad in the middle -->
+        <g transform="translate(18, 37.5)">
+          <!-- Center circle -->
+          <circle cx="0" cy="0" r="3" fill="#00CFFF"/>
+          
+          <!-- Up -->
+          <rect x="-4" y="-14" width="8" height="10" rx="2" fill="#00CFFF"/>
+          
+          <!-- Down -->
+          <rect x="-4" y="4" width="8" height="10" rx="2" fill="#00CFFF"/>
+          
+          <!-- Left -->
+          <rect x="-14" y="-4" width="10" height="8" rx="2" fill="#00CFFF"/>
+          
+          <!-- Right -->
+          <rect x="4" y="-4" width="10" height="8" rx="2" fill="#00CFFF"/>
+        </g>
+      </g>
+      
+    </g>
+  </g>
+</svg>
